@@ -4,7 +4,7 @@ import './App.css';
 class App extends React.Component {
   constructor(props : any) {
     super(props)
-    this.handlers()
+
   }
 
   public render() {
@@ -71,6 +71,10 @@ class App extends React.Component {
         </main>
       </div>
     );
+  }
+
+  public componentDidMount() {
+    this.handlers()
   }
 
   protected handlers() {
